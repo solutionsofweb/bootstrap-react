@@ -12,7 +12,7 @@ const Home = () => {
             backSpeed: 50,
             backDelay: 2000
         };
-        let typed = new Typed('.typed', options);
+        new Typed('.typed', options);
         
     }, [])
 
