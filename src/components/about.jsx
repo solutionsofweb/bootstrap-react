@@ -1,11 +1,13 @@
+import SectionInfo from "../common/sectionInfo";
+
 const About = () => {
     return ( 
         <section id="about" className="about">
             <div className="container">
-                <div className="section-title">
-                <h2>About</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
+                <SectionInfo 
+                  title="About"
+                  description="Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas." 
+                />
                 <div className="row">
                 <div className="col-lg-4" data-aos="fade-right">
                     <img src="assets/img/profile-img.jpg" className="img-fluid" alt />

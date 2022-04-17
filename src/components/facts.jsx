@@ -1,11 +1,13 @@
+import SectionInfo from "../common/sectionInfo";
+
 const Facts = () => {
     return ( 
         <section id="facts" className="facts">
             <div className="container">
-                <div className="section-title">
-                <h2>Facts</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
+                <SectionInfo 
+                  title="Facts"
+                  description="Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas." 
+                />
                 <div className="row no-gutters">
                 <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
                     <div className="count-box">

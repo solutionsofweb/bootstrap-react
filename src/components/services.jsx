@@ -1,11 +1,13 @@
+import SectionInfo from "../common/sectionInfo";
+
 const Services = () => {
     return ( 
         <section id="services" className="services">
             <div className="container">
-                <div className="section-title">
-                <h2>Services</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
+                <SectionInfo 
+                  title="Services"
+                  description="Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas." 
+                />
                 <div className="row">
                 <div className="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
                     <div className="icon"><i className="bi bi-briefcase" /></div>
