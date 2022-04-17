@@ -1,6 +1,13 @@
 import SectionInfo from "../common/sectionInfo";
+import FactItem from "./factItem";
 
 const Facts = () => {
+    const factItems = [
+        {text: "Happy Clients, consequuntur quae", icon: "emoji-smile"},
+        {text: "Projects, adipisci atque cum quia aut", icon: "journal-richtext"},
+        {text: "Hours Of Support, aut commodi quaerat", icon: "headset"},
+        {text: "Hard Workers, rerum asperiores dolor", icon: "people"}
+    ];
     return ( 
         <section id="facts" className="facts">
             <div className="container">
@@ -9,34 +16,11 @@ const Facts = () => {
                   description="Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas." 
                 />
                 <div className="row no-gutters">
-                <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-                    <div className="count-box">
-                    <i className="bi bi-emoji-smile" />
-                    <span data-purecounter-start={0} data-purecounter-end={232} data-purecounter-duration={1} className="purecounter" />
-                    <p><strong>Happy Clients</strong> consequuntur quae</p>
-                    </div>
-                </div>
-                <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay={100}>
-                    <div className="count-box">
-                    <i className="bi bi-journal-richtext" />
-                    <span data-purecounter-start={0} data-purecounter-end={521} data-purecounter-duration={1} className="purecounter" />
-                    <p><strong>Projects</strong> adipisci atque cum quia aut</p>
-                    </div>
-                </div>
-                <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay={200}>
-                    <div className="count-box">
-                    <i className="bi bi-headset" />
-                    <span data-purecounter-start={0} data-purecounter-end={1453} data-purecounter-duration={1} className="purecounter" />
-                    <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
-                    </div>
-                </div>
-                <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay={300}>
-                    <div className="count-box">
-                    <i className="bi bi-people" />
-                    <span data-purecounter-start={0} data-purecounter-end={32} data-purecounter-duration={1} className="purecounter" />
-                    <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
-                    </div>
-                </div>
+                    {
+                        factItems.map(item => (
+                            <FactItem itemText={item.text} itemIcon={item.icon}/>
+                        ))
+                    }
                 </div>
             </div>
         </section>
