@@ -4,7 +4,6 @@ import About from './components/about';
 import Facts from './components/facts';
 import Skills from './components/skills';
 import Resume from './components/resume';
-import Portfolio from './components/portfolio';
 import Services from './components/services';
 import Contact from './components/contact';
 import Footer from './components/footer';
@@ -22,7 +21,6 @@ function App() {
         <Facts />
         <Skills />
         <Resume />
-        <Portfolio />
         <Services />
         <Contact />
       </main>
