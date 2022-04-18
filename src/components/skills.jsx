@@ -1,9 +1,14 @@
 import React, { Component, useEffect } from 'react';
 import SectionInfo from '../common/sectionInfo';
+import SkillItem from './skillItem';
 
 class Skills extends Component {
     state = { 
-      skillsContent: [{skill: "html", level: 100}, {skill: "css", level: 90}]
+      skillsContent: [
+        {skill: "html", level: 100}, 
+        {skill: "css", level: 90},
+        {skill: "javascript", level: 75}
+      ]
     } 
 
     render(){
@@ -17,14 +22,7 @@ class Skills extends Component {
                 <div className="row skills-content">
                   {
                     this.state.skillsContent.map(skill => (
-                      <div key={skill.skill} className="col-lg-6" data-aos="fade-up">
-                        <div className="progress">
-                          <span className="skill">{skill.skill} <i className="val">{`${skill.level}%`}</i></span>
-                          <div className="progress-bar-wrap">
-                              <div className="progress-bar" role="progressbar" aria-valuenow={skill.skill} aria-valuemin={0} aria-valuemax={100} style={{width: `${skill.level}%`}} />
-                          </div>
-                        </div>
-                      </div>
+                      <SkillItem data={skill}/>
                     ))
                   }
                 </div>

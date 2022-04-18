@@ -18,7 +18,7 @@ const Facts = () => {
                 <div className="row no-gutters">
                     {
                         factItems.map(item => (
-                            <FactItem itemText={item.text} itemIcon={item.icon}/>
+                            <FactItem data={item}/>
                         ))
                     }
                 </div>
