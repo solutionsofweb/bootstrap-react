@@ -22,7 +22,7 @@ const SideBar = () => {
                         <div className="social-links mt-3 text-center">
                             {
                                 socialLinks.map(platform => (
-                                    <SocialLink platformLink={platform.platformLink} platformIcon={platform.platformIcon} />
+                                    <SocialLink data={platform} />
                                 ))
                             }
                         </div>
