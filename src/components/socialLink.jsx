@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 const SocialLink = (props) => {
-    const {platformLink, platformIcon} = props.data;
-    const setIcon = platformIcon ? "bx bxl-" + platformIcon : "bx bxl";
+    const icon = props.data[0].icon;
+    const setIcon = icon ? "bx bxl-" + icon : "bx bxl";
     return ( 
-        <a href={platformLink} className="twitter" target="_blank"><i className={setIcon} /></a>
+        <a href="#" className="twitter" target="_blank"><i className={setIcon} /></a>
      );
 }
  

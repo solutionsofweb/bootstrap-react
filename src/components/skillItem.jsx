@@ -1,6 +1,5 @@
 const SkillItem = (props) => {
     const {data: skill} = props;
-    console.log(props);
     return ( 
         <div key={skill.skill} className="col-lg-6" data-aos="fade-up">
             <div className="progress">
