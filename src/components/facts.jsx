@@ -3,10 +3,10 @@ import FactItem from "./factItem";
 
 const Facts = () => {
     const factItems = [
-        {text: "Happy Clients, consequuntur quae", icon: "emoji-smile"},
-        {text: "Projects, adipisci atque cum quia aut", icon: "journal-richtext"},
-        {text: "Hours Of Support, aut commodi quaerat", icon: "headset"},
-        {text: "Hard Workers, rerum asperiores dolor", icon: "people"}
+        {id: 1, text: "Happy Clients, consequuntur quae", icon: "emoji-smile"},
+        {id: 2, text: "Projects, adipisci atque cum quia aut", icon: "journal-richtext"},
+        {id: 3, text: "Hours Of Support, aut commodi quaerat", icon: "headset"},
+        {id: 4, text: "Hard Workers, rerum asperiores dolor", icon: "people"}
     ];
     return ( 
         <section id="facts" className="facts">
@@ -18,7 +18,7 @@ const Facts = () => {
                 <div className="row no-gutters">
                     {
                         factItems.map(item => (
-                            <FactItem data={item}/>
+                            <FactItem key={item.id} data={item}/>
                         ))
                     }
                 </div>

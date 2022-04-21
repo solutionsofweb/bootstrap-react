@@ -10,16 +10,19 @@ import Services from './components/services';
 import Contact from './components/contact';
 import Footer from './components/footer';
 import BackToTop from './components/backToTop';
-import axios from 'axios';
+import http from './services/httpService';
+import config from './config.json';
 import './App.css';
 
 class App extends Component {
-  state = { 
+  state = {
     socialLinks: []
-  }
+  };
 
-  async componentDidMount(){
-        const {data} = await axios.get('http://127.0.0.1:8000/plateForms');
+  async componentDidMount() {
+    const {data: socialLinks} = await http.get(config.baseUrl +'plateForms');
+    this.setState({socialLinks});
+    console.log('why component did mount render two times?');
   }
   
 

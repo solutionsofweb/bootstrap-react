@@ -5,9 +5,9 @@ import SkillItem from './skillItem';
 class Skills extends Component {
     state = { 
       skillsContent: [
-        {skill: "html", level: 100}, 
-        {skill: "css", level: 90},
-        {skill: "javascript", level: 75}
+        {id: 1, skill: "html", level: 100}, 
+        {id: 2, skill: "css", level: 90},
+        {id: 3, skill: "javascript", level: 75}
       ]
     } 
 
@@ -22,7 +22,7 @@ class Skills extends Component {
                 <div className="row skills-content">
                   {
                     this.state.skillsContent.map(skill => (
-                      <SkillItem data={skill}/>
+                      <SkillItem key={skill.id} data={skill}/>
                     ))
                   }
                 </div>

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import SocialLink from "./socialLink";
 
-const SideBar = () => {
+const SideBar = (props) => {
     return ( 
         <React.Fragment >
             <i className="bi bi-list mobile-nav-toggle d-xl-none" />
@@ -9,7 +9,7 @@ const SideBar = () => {
             <header id="header">
                 <div className="d-flex flex-column">
                     <div className="profile">
-                        <img src="assets/img/profile-img.jpg" alt className="img-fluid rounded-circle" />
+                        <img src="assets/img/profile-img.jpg" alt="" className="img-fluid rounded-circle" />
                         <h1 className="text-light"><a href="index.html">Alex Smith</a></h1>
                         <div className="social-links mt-3 text-center">
                             <SocialLink  />

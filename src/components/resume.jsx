@@ -26,7 +26,7 @@ const Resume = () => {
                         <h3 className="resume-title">Education</h3>
                         {
                             educations.map(education => (
-                                <Education education={education}/>
+                                <Education key={education.degree} education={education}/>
                             ))
                         }
                     </div>
@@ -34,7 +34,7 @@ const Resume = () => {
                         <h3 className="resume-title">Professional Experience</h3>
                         {
                             experiences.map(experience => (
-                                <Experience experience={experience}/>
+                                <Experience key={experience.company} experience={experience}/>
                             ))
                         }
                     </div>
