@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 
-const SocialLink = (props) => {
-    const icon = props.data[0].icon;
-    const setIcon = icon ? "bx bxl-" + icon : "bx bxl";
+const SocialLink = () => {
     return ( 
-        <a href="#" className="twitter" target="_blank"><i className={setIcon} /></a>
+        <a href="#" className="twitter" target="_blank"><i className="bx bxl-twitter" /></a>
      );
 }
  
